@@ -1,0 +1,25 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color:rgba(116, 94, 98, 0.5);
+}
+.heading {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 1.19;
+  text-transform: uppercase;
+}
+.title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.19;
+}
+.subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1,22;
+}
+.plain-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+}
