@@ -8,189 +8,366 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./icomoon/style.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  <header>
-    <a href="/"><img src="./images/logo_cloudbudget.svg" alt="cloudbudget logo"></a>
-    <nav>
-      <ul>
-        <li><a href="">OVERVIEW</a></li>
-        <li><a href="">FEATURES</a></li>
-        <li><a href="">TECHNOLOGY</a></li>
-        <li><a href="">CONTACT</a></li>
-      </ul>
-      <button>LOGIN</button>
-    </nav>
+  <header class="page-header">
+    <div class="container">
+      <div class="row">
+      <div class="col col-3">
+        <a aria-label="Logo refresh page" href="/"><img src="./images/logo_cloudbudget.svg" class="logo" alt="cloudbudget logo">
+        </a>
+      </div>
+      <div class="col col-6">
+        <nav class="page-nav">
+          <ul class="page-nav-list">
+            <li class="page-nav-list-item">
+              <a aria-label="switch to the section OVERVIEW" href="#" class="page-nav-link">
+                OVERVIEW
+              </a>
+            </li>
+            <li class="page-nav-list-item">
+              <a aria-label="switch to the section FEATURES" href="#" class="page-nav-link">
+                FEATURES
+              </a>
+            </li>
+            <li class="page-nav-list-item">
+              <a aria-label="switch to the section TECHNOLOGY" href="#" class="page-nav-link">
+                TECHNOLOGY
+              </a>
+            </li>
+            <li class="page-nav-list-item">
+              <a aria-label="switch to the section CONTACT" href="#" class="page-nav-link">
+                CONTACT
+              </a>
+            </li>
+            <li class="page-nav-list-item">
+              <a aria-label="opening the Sign up window" href="#" class="page-nav-link">
+                Sign up
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col col-2 offset-1">
+        <button class="primary-button">
+          LOGIN
+        </button>
+      </div>
+      </div>
+    </div>
   </header>
   <main>
-    <section class="CloudBudget">
-      <h1>CLOUDBUDGET</h1>
-      <p>Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of 
-        Up to €4.99
-      </p>
-      <button>Sign Up</button>
-      <img src="./images/Bg.jpg" alt="Top view. A person is typing on a laptop keyboard. Next to it is a notebook, a flower, and a cup of tea">
+    <section class="hero-section text-center in-white">
+      <div class="container">
+        <h1 class="heading">
+          CLOUDBUDGET
+        </h1>
+        <div class="row">
+          <div class="col col-6 offset-3">
+            <p class="intro">Cloud budget management for everyone. Only <br>
+               €69.95 a Month After a 7 Day
+              Trial of <br>
+               Up to €4.99
+           </p>        
+           <button class="secondary-button">
+             Sign Up
+           </button>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="Management Software">
-      <h2>Easy to Use Cloud Budget Management Software</h2>
-      <p>Our software is made so you can access and manage your budget and expenses online at any time from any device. 
-        It provides detailed income and expense reports with graphs so you can easilly see your spending patterns and 
-        budget at a glance. Read below to find out more.
-      </p>
-      <video src="/" poster="./images/Video_poster.jpg"></video>
+    <section class="management-software">
+      <div class="container">
+        <div class="row">
+        <div class="col col-5">
+          <h2 class="title-managment">Easy to Use Cloud Budget <br>
+             Management Software
+            </h2>
+          <p class="desc-managment">Our software is made so you can access and manage your
+            budget and expenses online at any time from any device. It provides detailed 
+            income and expense reports with graphs so you can easilly see your spending 
+            patterns and budget at a glance. Read below to find out more.
+        </p>
+        </div>
+       <div class="col col-6 offset-1 video-section-managment">
+        <video aria-label="video" class="video-managment" src="/" poster="./images/Video_poster.jpg"></video>
+        <button class="play-button" aria-label="play video">
+        </button>
+        <img class="play-icon" src="./images/Play.svg" alt="icon play">
+       </div>
+      </div>
+      </div>
     </section>
-    <section class="Features">
-      <h2>Features</h2>
-      <nav>
-      <ul>
-        <li>
-          <img src="./images/features_supports.jpg" alt="Cash bills in the palms">
-          <h3>Supports All Currencies and Cards</h3>
-          <p>We support all popular currencies and is fully customizable to add</p>
-          <a href=""><img src="./images/Read_More.svg" alt="Read More"></a>
+    <section class="features-section">
+      <div class="container">
+        <div class="row">
+        <h2 class="title-features-section">
+          Features
+        </h2>
+        <div class="col col-4 features-item">
+          <img class="features-img" src="./images/features_supports.jpg" alt="Cash bills in the palms">
+          <div class="card-section-features">
+            <h3 class="features-title">
+              Supports All Currencies and Cards
+            </h3>
+            <p class="features-descr">
+              We support all popular currencies and is fully customizable to add
+            </p>
+            <a aria-label="go to page read more" href=""><img class="features-link" src="./images/Read_More.svg" alt="Read More">
+            </a>
+          </div>
+        </div>
+        <div class="col col-4 features-item">
+          <img class="features-img" src="./images/features_manage.jpg" alt="The girl's hands hold the phone and type">
+          <div class="card-section-features">
+            <h3 class="features-title">
+              Manage your expenses on the go
+            </h3>
+            <p class="features-descr">
+              You can access your account from anywhere in the world on any device
+            </p>
+            <a aria-label="go to page read more" href=""><img class="features-link" src="./images/Read_More.svg" alt="Read More">
+            </a>
+          </div>
+        </div>
+        <div class="col col-4 features-item">
+          <img class="features-img" src="./images/features_cloud.jpg" alt="A long corridor with panoramic windows of a green shade">
+          <div class="card-section-features">
+            <h3 class="features-title">
+              Cloud Budget Management Software
+            </h3>
+            <p class="features-descr">
+              Our software is made so you can access and manage your budget
+            </p>
+            <a aria-label="go to page read more" href=""><img class="features-link" src="./images/Read_More.svg" alt="Read More">
+            </a>
+          </div>
+        </div> 
+      </div>
+      </div>
+    </section>
+    <section class="technology-section">
+      <div class="container">
+        <h2 class="title-technology-section text-center mb-56">
+          Technology
+        </h2>
+      <ul class="row">
+        <li class="col col-3 technology-item">
+          <span class="technology-item-number">
+            01
+          </span>
+          <img class="technology-item-icon" src="./images/01cloud.svg" alt="Logo(cloud with arrow pointing down)">
+          <h3 class="technology-item-title">
+            Cloud Storage
+          </h3>
+          <p class="technology-item-descr">Access your account from
+            anywhere in the world on any device
+          </p>
         </li>
-        <li>
-          <img src="./images/features_manage.jpg" alt="The girl's hands hold the phone and type">
-          <h3>Manage your expenses on the go</h3>
-          <p>You can access your account from anywhere in the world on any device</p>
-          <a href=""><img src="./images/Read_More.svg" alt="Read More"></a>
+        <li class="col col-3 technology-item">
+          <span class="technology-item-number">
+            02
+          </span>
+          <img class="technology-item-icon" src="./images/02secure.svg" alt="logo(shield with search icon inside)">
+          <h3 class="technology-item-title">
+            Secure
+          </h3>
+          <p class="technology-item-descr">
+            All your information is stored on secure cloud servers
+          </p>
         </li>
-        <li>
-          <img src="./images/features_cloud.jpg" alt="A long corridor with panoramic windows of a green shade">
-          <h3>Cloud Budget Management Software</h3>
-          <p>Our software is made so you can access and manage your budget</p>
-          <a href=""><img src="./images/Read_More.svg" alt="Read More"></a>
+        <li class="col col-3 technology-item">
+          <span class="technology-item-number">
+            03
+          </span>
+          <img class="technology-item-icon" src="./images/03pdf.svg" alt="Logo(PDF file icon)">
+          <h3 class="technology-item-title">
+            PDF Download
+          </h3>
+          <p class="technology-item-descr">
+            Download any of your reports in PDF format
+          </p>
+        </li>
+        <li class="col col-3 technology-item">
+          <span class="technology-item-number">
+            04
+          </span>
+          <img class="technology-item-icon" src="./images/04svg.svg" alt="Logo(CSV file icon)">
+          <h3 class="technology-item-title">
+            CSV Download
+          </h3>
+          <p class="technology-item-descr">
+            All your information is stored on secure cloud servers
+          </p>
         </li>
       </ul>
-    </nav>
+    </div>
     </section>
-    <section class="Technology">
-      <h2>Technology</h2>
-      <ul>
-        <li>
-          <span class="numbers">01</span><img src="./images/01cloud.svg" alt="Logo(cloud with arrow pointing down)">
-          <h3>Cloud Storage</h3>
-          <p>Access your account from anywhere in the world on any device</p>
-        </li>
-        <li>
-          <span class="numbers">02</span><img src="./images/02secure.svg" alt="logo(shield with search icon inside)">
-          <h3>Secure</h3>
-          <p>All your information is stored on secure cloud servers</p>
-        </li>
-        <li>
-          <span class="numbers">03</span><img src="./images/03pdf.svg" alt="Logo(PDF file icon)">
-          <h3>PDF Download</h3>
-          <p>Download any of your reports in PDF format</p>
-        </li>
-        <li>
-          <span class="numbers">04</span><img src="./images/04svg.svg" alt="Logo(CSV file icon)">
-          <h3>CSV Download</h3>
-          <p>All your information is stored on secure cloud servers</p>
-        </li>
-      </ul>
+    <section class="map-section">
+      <div class="container">
+        <div class="row">
+        <div class="col col-5">
+          <h2 class="title-section-map">Stay focused on saving <br> money</h2>
+          <p class="descr-section-map">It is important to stay focused on saving 
+            money in any way you can. We help you monitor your spending habits 
+            so you can easily spot and cut any unnecessary expenses. Simply join
+            today to get started!
+          </p>
+          <nav class="nav-section-map">
+          <ul class="nav-list-section-map">
+            <li class="logo-section-map-list">
+              <a aria-label="go to google playstore" href="#"><img class="logo-section-map" src="./images/logo-google-playstore.svg" alt="icon google playstore">
+              </a>
+            </li>
+            <li class="logo-section-map-list">
+              <a aria-label="go to appstore" href="#"><img class="logo-section-map" src="./images/logo-apple-appstore.svg" alt="icon appstore">
+              </a>
+            </li>
+            <li class="logo-section-map-list">
+              <a aria-label="go to windows" href="#"><img class="logo-section-map" src="./images/icon_windows.svg" alt="icon windows">
+              </a>
+            </li>
+          </ul>
+        </nav>
+        </div>
+        <div class="col col-6 offset-1">
+          <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.4426963752194!2d30.745765515792197!3d46.47954587313948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6319f49eaaaab%3A0xa6467105eed9b98c!2sHillel%20IT%20School!5e0!3m2!1sru!2sua!4v1622916037960!5m2!1sru!2sua"
+             title="Location on the map" width="600" height="450" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+      </div>
     </section>
-    <section class="map">
-      <h3>Stay focused on saving money</h3>
-      <p>It is important to stay focused on saving money in any way you can. We help you
-        monitor your spending habits so you can easily spot and cut any unnecessary expenses. 
-        Simply join today to get started!
-      </p>
-      <ul>
-        <li>
-          <a href=""><img src="./images/logo-google-playstore.svg" alt="icon google playstore"></a>
-        </li>
-        <li>
-          <a href=""><img src="./images/logo-apple-appstore.svg" alt="icon appstore"></a>
-        </li>
-        <li>
-          <a href=""><img src="./images/icon_windows.svg" alt="icon window"></a>
-        </li>
-      </ul>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.4426963752194!2d30.745765515792197!3d46.47954587313948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6319f49eaaaab%3A0xa6467105eed9b98c!2sHillel%20IT%20School!5e0!3m2!1sru!2sua!4v1622916037960!5m2!1sru!2sua" width="600" height="450" loading="lazy"></iframe>
-    </section>
-    <section class="Contact">
-      <h3>Contact</h3>
-      <p>Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours. 
-         But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will 
-         give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, 
-         the master-builder of human happiness.
-      </p>
-    </section>
-    <form>
-      <label>
-        <input type="text" class="main-input" name="user first name" placeholder="First Name" required>
-      </label>
-      <label>
-        <input type="text" class="main-input" name="user last name" placeholder="Last Name" required>
-      </label>
-      <label>
-        <input type="tel" class="main-input" name="user phone number" placeholder="Phone Number" required>
-      </label>
-      </form>
-      <form action="action.php">
-       <select class="main-select" id="service" name="service">
-        <option>Select Service</option>
-        <option>Select Service2</option>
-        <option>Select Service3</option>
-      </select>
-      <button type="submit" class="main-button">Submit Now</button>
-    </form>
+    <section class="contact-section">
+      <div class="container">
+        <div class="row">
+        <div class="col col-5">
+          <h2 class="title-section-contact">Contact</h2>
+          <p class="p-contact">Questions or concerns? Just fill out the form below and our 
+            support team will get back to you within 24 hours. But I must
+            explain to you how all this mistaken idea of denouncing 
+            pleasure and praising pain was born and I will give you a 
+            complete account of the system, and expound the actual  
+            teachings of the great explorer of the truth, the master-builder
+            of human happiness.
+          </p>
+        </div>
+        <div class="col col-6 offset-1">
+          <form>
+            <div class="row">
+              <div class="col col-6">
+                <input type="text" class="main-input" name="user first name" placeholder="First Name" required>
+              </div>
+              <div class="col col-6 chevrondown-icon">
+                <input type="text" class="main-input" name="user last name" placeholder="Last Name" required>
+              </div>
+            </div>
+             <input type="tel" class="main-input" name="user phone number" placeholder="Phone Number" required>
+            <select class="main-select" id="service" name="service">
+              <option>Select Service</option>
+              <option>Select Service2</option>
+              <option>Select Service3</option>
+            </select>
+            <button type="submit" class="main-button">Submit Now</button>
+            <span class="icon-icon_select"></span>
+          </form>
+        </div>
+      </div>
+      </div>
+  </section>
   </main>
   <footer>
-    <section>
-      <h4>Address</h4>
-      <p>Pipang Ltd, Griva Digeni,
-        81-83 Jacovides Tower, 1st Floor
-        1090 Picosia USA</p>
-    </section>
-    <section>
-      <h4>Services</h4>
+    <section class="footer-section">
+      <div class="container">
+        <div class="row">
+        <div class="col col-3">
+          <h3 class="title-footer-section">Address</h3>
+      <p class="descr-footer-section">Pipang Ltd, Griva Digeni, <br>
+        81-83 Jacovides Tower, 1st Floor <br>
+        1090 Picosia USA
+      </p>
+      <p class="descr-footer">Copyright 2020 CloudBudget
+      </p>
+        </div>
+          <div class="col col-3">
+            <h3 class="title-footer-section">
+              Services
+            </h3>
       <nav>
-        <ul>
-          <li>
-            <a href="overview">overview</a>
+        <ul class="nav-list-section-footer">
+          <li class="nav-section-footer">
+            <a class="nav-link" href="overview">
+              overview
+            </a>
+          </li>
+          <li class="nav-section-footer">
+            <a class="nav-link" href="features">
+              features
+            </a>
+          </li>
+          <li class="nav-section-footer">
+            <a class="nav-link" href="technology">
+              technology
+            </a>
           </li>
           <li>
-            <a href="features">features</a>
+            <a class="nav-link" href="Terms&Conditions">
+              Terms & Conditions
+            </a>
           </li>
-          <li>
-          <a href="technology">technology</a>
-        </li>
-          <li>
-            <a href="Terms&Conditions">Terms & Conditions</a>
-            </li>
-          <li>
-            <a href="Privecy">Privecy</a> 
+          <li class="nav-section-footer">
+            <a class="nav-link" href="Privecy">
+              Privecy
+            </a> 
           </li>
         </ul>
       </nav>
-    </section>
-    <section>
-      <h4>Get in Touch</h4>
-      <ul>
-        <li>
-          <a href="mailto:info@cloudbudget.com">info@cloudbudget.com</a>
-        </li>
-        <li>
-          <a href=”tel:+1844-721-7120”>+1 844-721-7120</a>
-        </li>
-        <li>
-          <a href=""><img src="./images/facebook.svg" alt="icon facebook"></a>
-        </li>
-        <li>
-          <a href=""><img src="./images/linkedin.svg" alt="icon linkedin"></a>
-        </li>
-        <li>
-          <a href=""><img src="./images/twitter.svg" alt="icon twitter"></a>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h4>We Support</h4>
-      <a href=""><img src="./images/visa_mastercard.svg" alt="icon visa_mastercard"></a>
-    </section>
-      <p>Copyright 2020 CloudBudget</p>
+        </div>
+        <div class="col col-3">
+          <h3 class="title-footer-section"
+          >Get in Touch
+        </h3>
+          <ul class="nav-info-footer-section">
+            <li class="nav-info-list-footer-section">
+              <a class="nav-link-mail" href="mailto:info@cloudbudget.com">
+                info@cloudbudget.com
+              </a>
+            </li>
+            <li>
+              <a class="nav-link-tel" href=”tel:+1844-721-7120”>
+                +1 844-721-7120
+              </a>
+            </li>
+          </ul>
+            <ul class="nav-logo-img-section-footer">
+            <li class="nav-section-footer-logo">
+              <a aria-label="go to our facebook" href="#" class="nav-link-logo">
+                <img src="./images/facebook.svg" alt="icon facebook">
+              </a>
+            </li>
+            <li class="nav-section-footer-logo">
+              <a aria-label="go to our linkedin" href="#" class="nav-link-logo">
+                <img src="./images/linkedin.svg" alt="icon linkedin">
+              </a>
+            </li>
+            <li class="nav-section-footer-logo">
+              <a aria-label="go to our twitter" href="#" class="nav-link-logo">
+                <img src="./images/twitter.svg" alt="icon twitter">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-3">
+          <h3 class="title-footer-section">We Support</h3>
+          <a aria-label="payment systems visa mastercard" href="#">
+            <img class="img-footer" src="./images/visa_mastercard.svg" alt="icon visa_mastercard">
+          </a>
+        </div>
+      </div>
+      </div>
+      </section>
   </footer>
 </body>
 </html>
