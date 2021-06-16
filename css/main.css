@@ -318,13 +318,18 @@ img {
   line-height: 1;
   color: rgba(16, 16, 16, 0.08);
 }
-.technology-item-icon {
-  margin-bottom: 8px;
-  margin-top: -44px;
-  min-height: 88px;
+.icon-download_cloud,
+.icon-secure,
+.icon-pdf,
+.icon-csv {
+  position: absolute;
+  font-size: 85px;
+  color: #ED4C5C;
+  margin-top: -50px;
+  margin-left: -42px;
 }
 .technology-item-title {
-  margin-top: 6px;
+  margin-top: 44px;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 18px;
@@ -372,11 +377,12 @@ img {
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
-.play-icon {
+.icon-Play {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #FFF;
 }
 .features-section {
   padding-top: 62px;
@@ -451,7 +457,11 @@ img {
 .logo-section-map-list {
   display: inline-block;
 }
-.logo-section-map {
+.icon-playstore,
+.icon-appstore,
+.icon-windows {
+  font-size: 28px;
+  color: #FFF;
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -536,5 +546,17 @@ img {
   padding-top: 20px;
 }
 .nav-link-logo {
+  padding-right: 8px;
+}
+.icon-linkedin {
+  font-size: 26px;
+  padding-right: 8px;
+}
+.icon-facebook {
+  font-size: 28px;
+  padding-right: 8px;
+}
+.icon-twitter {
+  font-size: 26px;
   padding-right: 8px;
 }
