@@ -94,8 +94,8 @@
        <div class="col col-6 offset-1 video-section-managment">
         <video aria-label="video" class="video-managment" src="/" poster="./images/Video_poster.jpg"></video>
         <button class="play-button" aria-label="play video">
+          <span class="icon-Play"></span>
         </button>
-        <span class="icon-Play"></span>
        </div>
       </div>
       </div>
@@ -218,13 +218,19 @@
           <nav class="nav-section-map">
           <ul class="nav-list-section-map">
             <li class="logo-section-map-list">
-              <span class="icon-playstore"><a aria-label="go to our playstore" href="#"></a></span>
+              <a aria-label="go to our playstore" href="#" class="links-section-map">
+                <span class="icon-playstore"></span>
+              </a>
             </li>
             <li class="logo-section-map-list">
-              <span class="icon-appstore"><a aria-label="go to our appstore" href="#"></a></span>
+              <a aria-label="go to our appstore" href="#" class="links-section-map">
+                <span class="icon-appstore"></span>
+              </a>
             </li>
             <li class="logo-section-map-list">
-              <span class="icon-windows"><a aria-label="go to our windows" href="#"></a></span>
+            <a aria-label="go to windows" href="#" class="links-section-map">
+              <span class="icon-windows"></span>
+            </a>
             </li>
           </ul>
         </nav>
@@ -261,14 +267,16 @@
                 <input type="text" class="main-input" name="user last name" placeholder="Last Name" required>
               </div>
             </div>
-             <input type="tel" class="main-input" name="user phone number" placeholder="Phone Number" required>
-            <select class="main-select" id="service" name="service">
-              <option>Select Service</option>
-              <option>Select Service2</option>
-              <option>Select Service3</option>
-            </select>
+             <input type="tel" class="main-input" name="user phone number" placeholder="Phone Number" required> 
+            <div class="select-wrapper">
+              <select class="main-select" id="service" name="service">
+                <option>Select Service</option>
+                <option>Select Service2</option>
+                <option>Select Service3</option>
+              </select>
+              <span class="icon-icon_select"><a href="#"></a></span>
+            </div>
             <button type="submit" class="main-button">Submit Now</button>
-            <span class="icon-icon_select"><a href="#"></a></span>
           </form>
         </div>
       </div>
@@ -338,17 +346,23 @@
               </a>
             </li>
           </ul>
-            <ul class="nav-logo-img-section-footer">
+          <ul class="nav-logo-img-section-footer">
             <li class="nav-section-footer-logo">
-              <span class="icon-facebook"><a aria-label="go to our facebook" href="#"></a></span>
+              <a aria-label="go to our facebook" href="#" class="social-links">
+                <span class="icon-facebook"></span>
+              </a>
+            </li>
+          <li class="nav-section-footer-logo">
+            <a aria-label="go to our linkedin" href="#" class="social-links">
+              <span class="icon-linkedin"></span>
+            </a>
             </li>
             <li class="nav-section-footer-logo">
-              <span class="icon-linkedin"><a aria-label="go to our linkedin" href="#"></a></span>
+              <a aria-label="go to our twitter" href="#" class="social-links">
+                <span class="icon-twitter"></span>
+              </a>
             </li>
-            <li class="nav-section-footer-logo">
-              <span class="icon-twitter"><a aria-label="go to our twitter" href="#"></a></span>
-            </li>
-          </ul>
+        </ul>
         </div>
         <div class="col col-3">
           <h3 class="title-footer-section">We Support</h3>

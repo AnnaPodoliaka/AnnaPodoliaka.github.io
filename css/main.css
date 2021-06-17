@@ -460,10 +460,14 @@ img {
 .icon-playstore,
 .icon-appstore,
 .icon-windows {
+  text-decoration: none;
   font-size: 28px;
   color: #FFF;
   padding-left: 8px;
   padding-right: 8px;
+}
+.links-section-map {
+  text-decoration: none;
 }
 .title-section-contact {
   font-weight: 600;
@@ -479,8 +483,8 @@ img {
 }
 .icon-icon_select {
   position: relative;
-  left: 314px;
-  top: -82px;
+  left: 490px;
+  top: -64px;
   font-size: 14px;
   color: rgba(19, 39, 67, 0.5);
 }
@@ -551,12 +555,21 @@ img {
 .icon-linkedin {
   font-size: 26px;
   padding-right: 8px;
+  color: #101010;
+  line-height: 2;
 }
 .icon-facebook {
   font-size: 28px;
   padding-right: 8px;
+  color: #101010;
+  line-height: 2;
 }
 .icon-twitter {
   font-size: 26px;
   padding-right: 8px;
+  color: #101010;
+  line-height: 2;
+}
+.social-links {
+  text-decoration: none;
 }
